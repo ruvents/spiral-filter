@@ -1,0 +1,38 @@
+{
+    "name": "ruvents/spiral-filter",
+    "description": "Filter request input data",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Ruvents\\SpiralFilter\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "spiral/framework": "^2.8",
+        "symfony/translation-contracts": "^v2.5.0",
+        "ruvents/spiral-input": "dev-packages",
+        "ruvents/spiral-property-accessor": "dev-packages",
+        "ruvents/spiral-validation": "dev-packages"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "http-interop/http-factory-guzzle": "^1.2.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../spiral-input"
+        },
+        {
+            "type": "path",
+            "url": "../spiral-property-accessor"
+        },
+        {
+            "type": "path",
+            "url": "../spiral-validation"
+        }
+    ]
+}
